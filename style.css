@@ -173,7 +173,7 @@ nav li:first-child {
   width: 100px;
   height: 40px;
   background-color: black;
-  color: white;
+  color: #dbdbdb;
   border: none;
   cursor: pointer;
 }
@@ -195,6 +195,30 @@ nav li:first-child {
   }
 }
 
+/*customer review*/
+.section3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-around;
+  background-color: #f2eeebec;
+}
+
+.customer {
+  border: 1px solid #ab5010;
+  margin: 8px;
+  background-color: #8e4f4f;
+  box-shadow: 0 2px 4px rgba(59, 46, 46, 0.1);
+  width: 250px;
+}
+
+.review{
+  margin: 0;
+  border: #3c7820b7;
+  justify-content: first baseline;
+}
+
+ 
 /* Footer */
 
 .main-footer {
@@ -282,4 +306,50 @@ nav li:first-child {
   margin: 10px 0;
   text-align: center;
 }
+}
+
+.founder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  text-align: center;
+  padding: 16px;
+}
+
+.left2 {
+  text-align: center;
+}
+
+.founder img {
+  width: 150px; /* Default size for the image */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.founder h1 {
+  margin-top: 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .founder img {
+      width: 120px; /* Smaller size for tablets */
+  }
+
+  .founder h1 {
+      font-size: 1.5em; /* Adjust the font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .founder img {
+      width: 100px; /* Smaller size for mobile phones */
+  }
+
+  .founder h1 {
+      font-size: 1.2em; /* Further adjust the font size */
+  }
 }
